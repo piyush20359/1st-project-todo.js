@@ -10,12 +10,12 @@ let editingIndex = -1;
 
 
 function saveTodos() { 
-  //✅ Store object in localStorage (convert to JSON string)
+  //Store object in localStorage (convert to JSON string)
   localStorage.setItem('task', JSON.stringify(tasks));
 }
 
 function loadTodos() {
-    // ✅ Retrieve JSON string from localStorage
+    // Retrieve JSON string from localStorage
   const storedTasks = localStorage.getItem('task');
   //
   try {
